@@ -124,7 +124,7 @@
         {
             $container.load('full.php');
 
-        }, 59000); //5menit
+        }, 99000); //5menit
     });
 })(jQuery);
 </script>
