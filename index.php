@@ -154,7 +154,7 @@
       <div class="container">
         <div class="row">
           <div class="span12">
-		  <h1 class="hero-unit">Selamat Datang di Kelurahan Leuwigajah</h1>
+		  <h1 class="hero-unit"><b>Selamat Datang di Kelurahan Leuwigajah</b></h1>
 		  Keterangan:
 			<table>
 			<tr>

@@ -123,7 +123,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -131,20 +131,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Belum Menikah</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Ket. Belum Menikah</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -170,7 +170,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -178,20 +178,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Bersih Diri</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Ket. Bersih Diri</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>		
 			</div>
 		<?php
@@ -217,7 +217,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -225,20 +225,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Belum Punya Rumah</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Belum Punya Rumah</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -264,7 +264,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -272,23 +272,21 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Domisili Parpol</p>	
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Domisili Parpol</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>		
-				<p><?php echo $lama ;echo $row['waktu_antrian']	?></p>	
 			</div>
 		<?php
 			
@@ -313,7 +311,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -321,20 +319,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Domisili Perusahaan</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Domisili Perusahaan</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -360,7 +358,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -368,20 +366,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Domisili Yayasan</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Domisili Yayasan</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>
 			</div>
 		<?php
@@ -407,7 +405,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -415,20 +413,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Domisili Khusus Haji</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Domisili Khusus Haji</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -454,7 +452,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -462,20 +460,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Ijin Keramaian</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3> Ijin Keramaian</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -501,7 +499,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -509,20 +507,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Janda / Duda</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Status Janda / Duda</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -548,7 +546,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -556,20 +554,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Usaha</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Ket. Usaha</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>
 			</div>
 		<?php
@@ -595,7 +593,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -603,20 +601,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Kelahiran</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Ket. Kelahiran</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -642,7 +640,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -650,20 +648,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Kematian</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Ket. Kematian</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -689,7 +687,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -697,20 +695,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>SKCK</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>SKCK</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>		
 			</div>
 		<?php
@@ -736,7 +734,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -744,20 +742,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>SKTM Rumah Sakit</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>SKTM Rumah Sakit</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>
 			</div>
 		<?php
@@ -783,7 +781,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -791,20 +789,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>SKTM Pendidikan</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>SKTM Pendidikan</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -830,7 +828,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -838,20 +836,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Lain - Lain</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Lain - Lain</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -877,7 +875,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -885,20 +883,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Nikah (NA)</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Nikah (NA)</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -924,7 +922,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -932,20 +930,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Adm. Cerai</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Adm. Cerai</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -971,7 +969,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -979,20 +977,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Kartu Identitas Kerja</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Kartu Identitas Kerja</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1018,7 +1016,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1026,20 +1024,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Domisili Panitia Pembangunan</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Domisili Panitia Pembangunan</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1065,7 +1063,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1073,20 +1071,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Ijin Mendirikan Bangunan</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Ijin Mendirikan Bangunan</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1112,7 +1110,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1120,20 +1118,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Kartu Keluarga (KK)</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Kartu Keluarga (KK)</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1159,7 +1157,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1167,20 +1165,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Kartu Tanda Penduduk (KTP)</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Kartu Tanda Penduduk (KTP)</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1206,7 +1204,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1214,20 +1212,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>KIPEM</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>KIPEM</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1253,7 +1251,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1261,20 +1259,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Orang yang Sama</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Ket. Orang yang Sama</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1300,7 +1298,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1308,20 +1306,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Ahli Waris</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Ahli Waris</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1347,7 +1345,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1355,20 +1353,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Domisili Penduduk</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Domisili Penduduk</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1394,7 +1392,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1402,20 +1400,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Ket. Tanah & Bangunan (AJB)</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Tanah & Bangunan (AJB)</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1441,7 +1439,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1449,20 +1447,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Ket. Tanah & Bangunan (Sertifikat)</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Tanah & Bangunan (Sertifikat)</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1488,7 +1486,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1496,20 +1494,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Kuasa</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Surat Kuasa</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1535,7 +1533,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1543,20 +1541,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Mutasi Balik Nama PBB</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Mutasi Balik Nama PBB</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1582,7 +1580,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1590,20 +1588,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Penerbitan SPPT PBB</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Penerbitan SPPT PBB</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1629,7 +1627,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1637,20 +1635,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Split PBB Pemecahan</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Split PBB Pemecahan</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1676,7 +1674,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1684,20 +1682,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Kematian</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Ket. Kematian</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -1723,7 +1721,7 @@
 				$row['status']='Masuk Antrian';
 				$waktu ="Waktu Antri: ". $row['waktu_antrian'];
 				$oleh ="Petugas : ". $row['nama_pegawai'];
-				$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+				$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				?>  				
 				<div class="biru">			
 			<?php }else if($row['status']=='2'){ ?>			
@@ -1731,20 +1729,20 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h4>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h4>";	
+						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h4>". $row['waktu_selesai']."</h4>";	
+								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
-				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Keterangan Kelahiran</p>	
+				<p><h2><?php echo $row['nama']?></h2></p>
+				<p><h3>Ket. Kelahiran<h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
