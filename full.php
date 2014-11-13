@@ -95,10 +95,8 @@
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Permintaan Andon Nikah</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Andon Nikah</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>		
 			</div>
 		<?php
@@ -144,11 +142,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan Belum Menikah</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Keterangan Belum Menikah</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -193,11 +189,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan Bersih Diri</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Keterangan Bersih Diri</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>		
 			</div>
 		<?php
@@ -242,11 +236,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan Belum Punya Rumah</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Keterangan Belum Punya Rumah</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -292,10 +284,9 @@
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan Domisili Parpol</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Keterangan Domisili Parpol</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>		
 				<p><?php echo $lama ;echo $row['waktu_antrian']	?></p>	
 			</div>
@@ -341,11 +332,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan Domisili Perusahaan</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Keterangan Domisili Perusahaan</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -390,11 +379,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan Domisili Yayasan</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Keterangan Domisili Yayasan</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>
 			</div>
 		<?php
@@ -439,11 +426,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan Ibadah Haji</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Keterangan Ibadah Haji</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -488,11 +473,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan Ijin Keramaian</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Keterangan Ijin Keramaian</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -537,11 +520,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan Janda</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Keterangan Janda</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -586,11 +567,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan Tempat Usaha</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Keterangan Tempat Usaha</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>
 			</div>
 		<?php
@@ -635,11 +614,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan Lahir</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Keterangan Kelahiran</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -684,11 +661,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan Kematian</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Keterangan Kematian</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -733,11 +708,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan Pengantar SKCK</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Pengantar SKCK</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>		
 			</div>
 		<?php
@@ -782,11 +755,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan SKTM Rumah Sakit</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>SKTM Rumah Sakit</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>
 			</div>
 		<?php
@@ -831,11 +802,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan SKTM Sekolah</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>SKTM Sekolah</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -880,11 +849,9 @@
 					 }?>
 					 
 				<?php echo $lama;?>	
-				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
-				<p><?php echo $row['nik']?></p>
+				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h3><?php echo $row['nama']?></h3></p>
-				<p>Surat Keterangan SKTM Sekolah</p>	
-				<p>"<?php echo $row['status']?>"</p>
+				<p>Lain - Lain</p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
