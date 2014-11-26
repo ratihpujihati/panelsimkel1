@@ -83,13 +83,13 @@
 				<?php $row['status']='Masih dalam proses';
 						$waktu = "Waktu Proses: ". $row['waktu_proses'];
 						$oleh ="Petugas : ". $row['nama_pegawai'];
-						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
+						$lama = "Sudah menunggu: <br /><h3>" . selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">						
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -137,7 +137,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -184,7 +184,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -209,7 +209,7 @@
 									where an.nik=dp.nik 
 											and p.id_data_pegawai = di.id_data_pegawai
 									and (an.antrian_oleh = p.id_pengguna
-										or an.proses_oleh = p.id_pengguna)	and DATE_FORMAT(an.tanggal_surat,'%d') = DAY(NOW())   			
+										or an.proses_oleh = p.id_pengguna) 			
 										order by an.no_registrasi desc") or die (mysql_error());
 			$no = 1;
 			while ($row = mysql_fetch_array($bpr)) {
@@ -231,7 +231,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -256,7 +256,7 @@
 											where an.nik=dp.nik 
 													and p.id_data_pegawai = di.id_data_pegawai
 											and (an.antrian_oleh = p.id_pengguna
-												or an.proses_oleh = p.id_pengguna)	and DATE_FORMAT(an.tanggal_surat,'%d') = DAY(NOW())   				
+												or an.proses_oleh = p.id_pengguna)	 				
 												order by an.no_registrasi desc") or die (mysql_error());
 			$no = 1;
 			while ($row = mysql_fetch_array($domisili_parpol)) {
@@ -278,7 +278,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -303,7 +303,7 @@
 											where an.nik=dp.nik 
 													and p.id_data_pegawai = di.id_data_pegawai
 											and (an.antrian_oleh = p.id_pengguna
-												or an.proses_oleh = p.id_pengguna)	and DATE_FORMAT(an.tanggal_surat,'%d') = DAY(NOW())   				
+												or an.proses_oleh = p.id_pengguna)				
 												order by an.no_registrasi desc") or die (mysql_error());
 			$no = 1;
 			while ($row = mysql_fetch_array($domisili_perusahaan)) {
@@ -325,7 +325,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -372,7 +372,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -397,7 +397,7 @@
 											where an.nik=dp.nik 
 													and p.id_data_pegawai = di.id_data_pegawai
 											and (an.antrian_oleh = p.id_pengguna
-												or an.proses_oleh = p.id_pengguna) and DATE_FORMAT(an.tanggal_surat,'%d') = DAY(NOW())   					
+												or an.proses_oleh = p.id_pengguna)    					
 												order by an.no_registrasi desc") or die (mysql_error());
 			$no = 1;
 			while ($row = mysql_fetch_array($ibadahhaji)) {
@@ -419,7 +419,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -444,7 +444,7 @@
 											where an.nik=dp.nik 
 													and p.id_data_pegawai = di.id_data_pegawai
 											and (an.antrian_oleh = p.id_pengguna
-												or an.proses_oleh = p.id_pengguna)	and DATE_FORMAT(an.tanggal_surat,'%d') = DAY(NOW())   				
+												or an.proses_oleh = p.id_pengguna)	   				
 												order by an.no_registrasi desc") or die (mysql_error());
 			$no = 1;
 			while ($row = mysql_fetch_array($ik)) {
@@ -466,7 +466,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -491,7 +491,7 @@
 											where an.nik=dp.nik 
 													and p.id_data_pegawai = di.id_data_pegawai
 											and (an.antrian_oleh = p.id_pengguna 
-												or an.proses_oleh = p.id_pengguna)	and DATE_FORMAT(an.tanggal_surat,'%d') = DAY(NOW())   				
+												or an.proses_oleh = p.id_pengguna)	   				
 												order by an.no_registrasi desc") or die (mysql_error());
 			$no = 1;
 			while ($row = mysql_fetch_array($janda)) {
@@ -513,7 +513,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -560,7 +560,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -607,7 +607,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -654,7 +654,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -701,7 +701,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -748,7 +748,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -773,7 +773,7 @@
 											where an.nik=dp.nik 
 													and p.id_data_pegawai = di.id_data_pegawai
 											and (an.antrian_oleh = p.id_pengguna
-												or an.proses_oleh = p.id_pengguna)	and DATE_FORMAT(an.tanggal_surat,'%d') = DAY(NOW())   				
+												or an.proses_oleh = p.id_pengguna)  				
 												order by an.no_registrasi desc") or die (mysql_error());
 			$no = 1;
 			while ($row = mysql_fetch_array($sekolah)) {
@@ -795,7 +795,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -815,12 +815,12 @@
 		<?php
 			$waktu_sekarang = date("H:i:s");
 			//-----------------------------------------------serbaguna
-			$serbaguna = mysql_query("select an.waktu_antrian,dp.nik,dp.nama,dp.alamat,an.no_registrasi, an.status, an.waktu_antrian, an.antrian_oleh,an.proses_oleh, di.nama_pengguna as nama_pegawai, an.waktu_proses,an.waktu_selesai, DATE_FORMAT(an.tanggal_surat,'%d') as tanggal_surat 
+			$serbaguna = mysql_query("select an.ket,an.waktu_antrian,dp.nik,dp.nama,dp.alamat,an.no_registrasi, an.status, an.waktu_antrian, an.antrian_oleh,an.proses_oleh, di.nama_pengguna as nama_pegawai, an.waktu_proses,an.waktu_selesai, DATE_FORMAT(an.tanggal_surat,'%d') as tanggal_surat 
 											from data_penduduk dp, permintaan_serbaguna an,pengguna p, data_pegawai di
 											where an.nik=dp.nik 
 													and p.id_data_pegawai = di.id_data_pegawai
 											and (an.antrian_oleh = p.id_pengguna
-												or an.proses_oleh = p.id_pengguna)	and DATE_FORMAT(an.tanggal_surat,'%d') = DAY(NOW())   				
+												or an.proses_oleh = p.id_pengguna)	 				
 												order by an.no_registrasi desc") or die (mysql_error());
 			$no = 1;
 			while ($row = mysql_fetch_array($serbaguna)) {
@@ -842,14 +842,14 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h2><?php echo $row['nama']?></h2></p>
-				<p><h3>Lain - Lain</h3></p>	
+				<p><h3><? echo  $row['ket'] ?></h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>	
 			</div>
 		<?php
@@ -889,7 +889,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -936,7 +936,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -983,7 +983,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1030,7 +1030,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1077,7 +1077,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1124,7 +1124,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1171,7 +1171,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1218,7 +1218,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1265,7 +1265,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1312,7 +1312,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1359,7 +1359,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1406,7 +1406,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1453,7 +1453,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1500,7 +1500,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1547,7 +1547,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1594,7 +1594,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1641,7 +1641,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1688,7 +1688,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1735,7 +1735,7 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". $row['waktu_selesai']."</h3>";	
+								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
 								$lama = $waktu;	
 					 }?>
 					 
@@ -1837,25 +1837,25 @@
 
     </script>
 	<script type="text/javascript"> 
-      // $(document).ready( function() {
-        // $('.hijau').delay(10000).fadeOut();
-      // });
+      // // $(document).ready( function() {
+        // // $('.hijau').delay(10000).fadeOut();
+      // // });
 	  
-	$('html').addClass('js');
+	// $('html').addClass('js');
 
-	$(function() {
+	// $(function() {
 
-		  var timer = setInterval( showDiv, 20000); //2o detik
+		  // var timer = setInterval( showDiv, 20000); //2o detik
 
-		 jam = document.getElementByClass('hijau');
+		 // jam = document.getElementByClass('hijau');
 
-		  function showDiv() {   
+		  // function showDiv() {   
 
-			 $('.hijau').fadeOut();
+			 // $('.hijau').fadeOut();
 
-		  }
+		  // }
 
-	});
+	// });
     </script>
     
 
