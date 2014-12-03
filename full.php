@@ -86,21 +86,22 @@
 						$lama = "Sudah menunggu: <br /><h3>" . selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
-			<?php }else if($row['status']=='3'){ ?>	
-					<div class="hijau">						
-					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
-								$lama = $waktu;	
-					 }?>
-					 
+			<?php }else if($row['status']=='3'){ 
+						$waktu = selisih($waktu_sekarang,$row['waktu_selesai']);
+						if($waktu <= '00:03:00'){ ?>
+							<div class="hijau">						
+							<?php	$row['status']='Surat telah selesai';	
+									$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
+									$lama = $waktu;	
+							}?>
+				<? } ?>
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>
 				<p><h2><?php echo $row['nama']?></h2></p>
 				<p><h3>Andon Nikah</h3></p>	
 				<p>Petugas : <?php echo $row['nama_pegawai']?></p>		
 			</div>
-		<?php
-			
+		<?php			
 			$no++;
 			}
 			//-----------------------------------------------selesai andonnikah
@@ -134,13 +135,15 @@
 						$lama = "Sudah menunggu: <br /><h3>" .selisih($row['waktu_antrian'],$waktu_sekarang)."</h3>";	
 				
 			?>
-			<?php }else if($row['status']=='3'){ ?>	
-					<div class="hijau">
-					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
-								$lama = $waktu;	
-					 }?>
-					 
+			<?php }else if($row['status']=='3'){ 
+						$waktu = selisih($waktu_sekarang,$row['waktu_selesai']);
+						if($waktu < '00:03:00'){ ?>
+							<div class="hijau">						
+							<?php	$row['status']='Surat telah selesai';	
+									$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
+									$lama = $waktu;	
+							}?>
+				<? } ?>
 				<?php echo $lama;?>	
 				<p>No Registrasi: <?php echo $row['no_registrasi']?></p>				
 				<p><h2><?php echo $row['nama']?></h2></p>
