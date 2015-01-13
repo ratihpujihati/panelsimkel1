@@ -15,6 +15,7 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/easySlider1.7.js"></script>
 		<script type="text/javascript" src="js/jam.js"></script>
+		<script type="text/javascript" src="js/jquery.marquee.js"></script>
 		<script src="js/modernizr.custom.js"></script>
 		<link href="../assets/css/bootstrapTheme.css" rel="stylesheet">
 		<link href="../assets/css/custom.css" rel="stylesheet">	
@@ -127,6 +128,8 @@
         }, 99000); //5menit
     });
 })(jQuery);
+
+
 </script>
 </head>
 <!--Header !-->
@@ -194,7 +197,7 @@
       <div class="container">
         <div class="row">
           <div class="span12">
-          <p><marquee align="center" direction="left" scrollmount="3" >
+          <p><marquee behavior="scroll" scrollamount="3" direction="left">
 		  
 			<?php 
 			$berita = mysql_query("select * from berita order by judul_berita asc") or die (mysql_error());			
