@@ -119,10 +119,10 @@
             }
         });
         var $container = $("#content");
-        $container.load("full.php");
+        $container.load("registrasi.php");
         var refreshId = setInterval(function()
         {
-            $container.load('full.php');
+            $container.load('registrasi.php');
 
         }, 99000); //5menit
     });
