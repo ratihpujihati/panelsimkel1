@@ -197,12 +197,12 @@
       <div class="container">
         <div class="row">
           <div class="span12">
-          <p><marquee behavior="scroll" scrollamount="3" direction="left">
+          <p><marquee behavior="scroll" scrollamount="6" direction="left">
 		  
 			<?php 
 			$berita = mysql_query("select * from berita order by judul_berita asc") or die (mysql_error());			
 			while ($row = mysql_fetch_array($berita)) {
-			   echo$row['judul_berita'];
+			   echo $row['judul_berita'];
 			   echo " ".$row['isi_berita'] ." | ";
 				}?></marquee> 
             </p>
