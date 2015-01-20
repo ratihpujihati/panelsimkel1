@@ -2,7 +2,7 @@
 <?php include "koneksi.php"?>
 <html>
 <head>
-	<title>Sistem Informasi Manajemen Kinerja Kelurahan Leuwi Gajah</title>
+	<title>Sistem Informasi Manajemen Kinerja Pelayanan Kelurahan Leuwi Gajah</title>
 	  <meta charset="utf-8">
 	<!-- For ease i'm just using a JQuery version hosted by JQuery- you can download any version and link to it locally -->
 		<meta name="description" content="Sistem Informasi Manajemen Kelurahan" />
@@ -147,7 +147,7 @@
               <?php echo $hari . "," ." ". $tanggal ." ". $bulan ." ". $tahun; ?> | <span id="clock"> <?php print date('H:i:s'); ?></span> 
             </ul>
             <ul class="nav pull-left">
-            <img id="logo" src="images/cimahi.png" height="30px" width="30px"/> Sistem Informasi Manajemen Kinerja <span>Kelurahan Leuwigajah</span> 
+            <img id="logo" src="images/cimahi.png" height="30px" width="30px"/> Sistem Informasi Manajemen Kinerja Pelayanan <span>Kelurahan Leuwigajah</span> 
             </ul>
             </div>
           </div>
@@ -197,7 +197,7 @@
       <div class="container">
         <div class="row">
           <div class="span12">
-          <p><marquee behavior="scroll" scrollamount="6" direction="left">
+          <p><marquee behavior="scroll" scrollamount="3" direction="left">
 		  
 			<?php 
 			$berita = mysql_query("select * from berita order by judul_berita asc") or die (mysql_error());			
