@@ -48,6 +48,10 @@
 			.lama {
 				font-size: 15px;
 			}
+			h3{
+				font-size: 16px;
+				font-weight: bold;
+			}
 			
 			
 </style>   
@@ -90,8 +94,9 @@
 			<?php }else if($row['status']=='3'){ ?>	
 					<div class="hijau">						
 					<?php		$row['status']='Surat telah selesai';	
-								$waktu = "Waktu  selesai: <br /><h3>". selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
-								$lama = $waktu;	
+								//$lama = "Waktu  selesai: <br /><h3>". selisih($row['waktu_selesai'],$row['waktu_antrian'])."</h3>";	
+								$lama = "Waktu  selesai: <br /><h3>".selisih($row['waktu_antrian'],$row['waktu_selesai'])."</h3>";	
+								//$lama = $waktu;	
 					 }?>
 					 
 				<?php echo $lama;?>	

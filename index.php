@@ -125,7 +125,7 @@
         {
             $container.load('registrasi.php');
 
-        }, 99000); //5menit
+        }, 90000); //5menit
     });
 })(jQuery);
 
@@ -203,7 +203,7 @@
 			$berita = mysql_query("select * from berita order by judul_berita asc") or die (mysql_error());			
 			while ($row = mysql_fetch_array($berita)) {
 			   echo $row['judul_berita'];
-			   echo " ".$row['isi_berita'] ." | ";
+			   echo " ".$row['isi_berita'] ." <img src='../images/cimahi.png' width='30px' height='30px'/>  ";
 				}?></marquee> 
             </p>
           </div>
