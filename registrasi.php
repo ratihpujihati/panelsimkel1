@@ -69,7 +69,7 @@
 			$handonnikah = mysql_query("select an.id_surat, an.waktu_antrian,dp.nik,dp.nama,dp.alamat,an.no_registrasi, an.status, an.waktu_antrian, an.antrian_oleh,an.proses_oleh, di.nama_pengguna as nama_pegawai, an.waktu_proses,an.waktu_selesai, DATE_FORMAT(an.tgl_dibuat,'%d') as tanggal_surat 
 											from data_penduduk dp, no_registrasi an,pengguna p, data_pegawai di
 											where an.nik=dp.nik  AND
-											an.status != '4' AND
+											an.status != '4'
 													and p.id_data_pegawai = di.id_data_pegawai
 													and DATE_FORMAT(an.tgl_dibuat,'%d') = DAY(NOW())
 											and (an.antrian_oleh = p.id_pengguna
